@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <header> 
+        <link rel="stylesheet" href="adminPanel.css">
+        <script src="ckeditor5/packages/ckeditor5-build-classic/build/ckeditor.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+                  
+    </header>
+    <body>
+        <div class="header">
+            <h3>
+                Myblog Admin
+            </h3>
+        </div>
+        <div class="row">
+            <div class="slide">
+                <a class="newButton" href="newtopic/newtopic.html" >
+                    <i class="material-icons">&#xe22b;</i>
+                     New Topic
+                </a>
+                <a class="catagories" href="#">
+                    <i class="material-icons">&#xe2c7;</i>
+                    Java
+                </a>
+                <a class="catagories" href="#">
+                    <i class="material-icons">&#xe2c7;</i>
+                    JavaScript
+                </a>
+                <a class="catagories" href="#">
+                    <i class="material-icons">&#xe2c7;</i>
+                    Spring
+                </a>
+            </div>
+            <div class="main">
+                <div class="card">
+                    <form >
+                        <label for="fname">Title:</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="Topic Title" ><br>
+                        <label for="fname">Category:</label><br>
+                        <select id="category" name="category" >
+                            <option value="java">Java</option>
+                            <option value="javascript">Javascript</option>
+                            <option value="spring">Spring</option>
+                          </select><br>
+                        <label for="fname">Content:</label><br>
+                        <textarea id="editor" name="content" placeholder="Topic Content" >
+                            <br><br><br><br>
+                            <br><br><br><br>
+                        </textarea>
+                        <br>
+                        <label for="image">Image:</label><br>
+                        <input type="file" id="image" name="image" placeholder="Topic Title" ><br>
+                        <br>
+                        <input type="submit" class="button_send">
+                   </form>
+                </div>
+              
+               
+            </div>
+        </div>
+        <div id="footer">
+            <h3>Coppyright by NNT</h3>
+            
+        </div>
+        <script>
+            ClassicEditor
+                .create( document.querySelector( '#editor' ) ,{
+                    codeBlock: {
+                        languages: [
+                            { language: 'plaintext', label: 'Plain text' }, // The default language.
+                            { language: 'c', label: 'C' },
+                            { language: 'cs', label: 'C#' },
+                            { language: 'cpp', label: 'C++' },
+                            { language: 'css', label: 'CSS' },
+                            { language: 'diff', label: 'Diff' },
+                            { language: 'html', label: 'HTML' },
+                            { language: 'java', label: 'Java' },
+                            { language: 'javascript', label: 'JavaScript' },
+                            { language: 'php', label: 'PHP' },
+                            { language: 'python', label: 'Python' },
+                            { language: 'ruby', label: 'Ruby' },
+                            { language: 'typescript', label: 'TypeScript' },
+                            { language: 'xml', label: 'XML' }
+                        ]
+                    }
+                })
+                .catch( error => {
+                    console.error( error );
+                } );
+        </script>
+        
+    </body>
+</html>

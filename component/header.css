@@ -1,0 +1,23 @@
+#header{
+    background-size: cover;
+    background-image:url("header.jpg");
+    background-blend-mode: color;
+    padding: 60px;
+    box-shadow:0px 4px 8px 0px gray;
+    font-weight: 100;
+    color: azure;
+    font-style: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+@media screen and (max-width:700px){
+ 
+    #header{
+        background-image:linear-gradient(#C2C19D,#9DB5C2);
+    }
+    @media screen and (max-width:400px){
+        #navbar{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

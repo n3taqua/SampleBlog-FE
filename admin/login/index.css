@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("background.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+html{
+    height: 100%;
+}
+.lg_form{
+    width: 30%;
+    height: 75%;
+    padding: 2%;
+    background-color: whitesmoke;
+    border-radius: 1%;
+    box-sizing: border-box;
+}
+.lg_form_header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    height: 25%;
+    margin-top: 5%;
+}
+.lg_form_content{
+}
+
+label{
+    color: rgb(68, 67, 67);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form_block{
+    display: block;
+    margin: 5% 3%;
+}
+.form_block .forgot_passowrd{
+    text-decoration: none;
+}
+.form_block .forgot_passowrd:hover{
+    color: gray;
+    text-decoration: none;
+
+}
+.input_container{
+    border: none;
+    background: transparent;
+    position: relative;
+}
+.input_container .icon_input{
+    position: absolute;
+    top: 50%;
+    color: gray;
+    transform: translateY(-50%);
+    left: 1%;
+}
+
+.input_container input[type="input"]{
+    text-indent:20px;
+    border: none;
+    padding: 3%;
+    width: 100%;
+    background: transparent;
+    border-bottom: solid rgb(172, 172, 172) 2px;
+}
+.input_container input:focus~.line{
+   width: 100%;
+   background-color: #130101;
+}
+.input_container input:focus{
+    outline: none;
+}
+
+.input_container input:focus~.icon_input{
+    color: #7f0099;
+}
+
+.input_container .line{
+    bottom: 0;
+    position: absolute;
+    transition: 1s;
+    width: 0px;
+    height: 2px;
+    background-color: #130101;
+}
+.input_container input[type="submit"]{
+    padding: 3%;
+    margin-top: 4%;
+    font: 1em sans-serif;
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    transition: background-image 2s;
+    background-image: linear-gradient(to right ,#6200fff1,#7f0099);
+    color:#fff;
+}
+.input_container input[type="submit"]:hover{
+    background-image: linear-gradient(to right ,#7f0099,#6200fff1);
+}
+

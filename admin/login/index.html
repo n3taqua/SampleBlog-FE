@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    </head>
+    <body>
+        <div class="lg_form">
+            <div class="lg_form_header">
+                <h1>Login</h1>
+            </div>
+            <div class="lg_form_content">
+                <form>
+                    <div class="form_block">
+                        <label for="username"> Username</label>
+                        <div class="input_container">
+                            <input 
+                                type="input" name="username"
+                                placeholder="Type your username" 
+                                onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = 'Type your username'"
+                            >
+                            <i class="material-icons icon_input">&#xe7fd;</i>
+                            <div class="line"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="form_block">
+                        <label for="password">Password</label>
+                        <div class="input_container">
+                           
+                            <input 
+                                type="input" name="password"
+                                placeholder="Type your password"
+                                onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = 'Type your password'"
+                             >
+                             <i class="material-icons icon_input">&#xe167;</i>
+                            <div class="line"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="form_block">
+                        <a  class="forgot_passowrd" href="#">Forgot Password?</a>
+
+                    </div>
+                    <div class="form_block">
+                        <div class="input_container">
+                            <input type="submit" name="Login" value="Login">
+                        </div>
+                    </div>
+                   
+                </form>
+            </div>
+            <div class="lg_form_footer">
+               
+            </div>
+        </div>
+    </body>
+</html>
